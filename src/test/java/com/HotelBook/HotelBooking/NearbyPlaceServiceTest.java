@@ -1,9 +1,6 @@
 package com.HotelBook.HotelBooking;
 
-
-
 import com.HotelBook.HotelBooking.Common.exception.HotelNotFoundException;
-import com.HotelBook.HotelBooking.Common.exception.UnauthorizedHotelAccessException;
 import com.HotelBook.HotelBooking.Hotel.HotelRepository;
 import com.HotelBook.HotelBooking.HotelNearby.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -58,7 +55,7 @@ class NearbyPlaceServiceTest {
         NearbyPlaceResponse response = nearbyPlaceService.addNearbyPlace(hotelId, managerId, request);
 
         // Assert
-       // assertNotNull(response);
+        // assertNotNull(response);
         verify(nearbyPlaceRepository).save(any(NearbyPlace.class));
     }
 

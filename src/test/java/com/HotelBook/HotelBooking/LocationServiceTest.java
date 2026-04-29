@@ -2,11 +2,10 @@ package com.HotelBook.HotelBooking;
 
 
 import com.HotelBook.HotelBooking.Common.exception.LocationAlreadyExistsException;
-import com.HotelBook.HotelBooking.Common.exception.ResourceNotFoundException;
 import com.HotelBook.HotelBooking.Hotel.Hotel;
 import com.HotelBook.HotelBooking.Hotel.HotelRepository;
 import com.HotelBook.HotelBooking.HotelLocation.*;
-import org.junit.jupiter.api.BeforeEach;
+        import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,7 +18,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
+        import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -107,3 +106,4 @@ class LocationServiceTest {
         verify(locationRepository).save(existingLoc);
     }
 }
+
