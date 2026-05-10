@@ -59,7 +59,7 @@ jobs:
       - name: Download current task definition
         run: |
           aws ecs describe-task-definition \
-            --task-definition ${{ env.ECS_SERVICE }} \
+            --task-definition hotelbooking-task \   # ← change this
             --query taskDefinition \
             > task-definition.json
 
